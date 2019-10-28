@@ -88,11 +88,12 @@
 数据格式示例:
 ```json
 {
-"data":{
-    "processid": 6072,
-    "type": 67,
-    "code": 200,
-    "cwxid": "wxid_yfng437lnlygXXX"
+"data":
+    {
+        "processid": 6072,
+        "type": 67,
+        "code": 200,
+        "cwxid": "wxid_yfng437lnlygXXX"
     }
 }
 ```
@@ -101,9 +102,10 @@
 ### 登录二维码 type:401
 ```json
 {
-    "data": {
-    "code": 401,
-    "message": "XXXXXXXXXXXX"
+"data": 
+    {
+        "code": 401,
+        "message": "XXXXXXXXXXXX"
     }
 }
 ```
@@ -112,21 +114,22 @@
 ### 登录后获取个人信息或者其他的信息 type:71
 ```json
 {
-"data":{
-    "username": "yqxxxx",
-    "processid": 6072,
-    "type": 71,
-    "cwxid": "wxid_yfng437lnlygXXX",
-    "wxid": "wxid_yfng437lnlygXXX",
-    "headPic": "http://wx.qlogo.cn/mmhead/ver_1/4wJLicLUKd1cHOWY0p7zzib6cfVlQUgYBcTQFOE/0",
-    "sheadPic": "http://wx.qlogo.cn/mmhead/ver_1/4wJLicLUKAKXK9d1cHOWY0p6ctcUgYBcTQFOE/132",
-    "nick": "bigxxx",
-    "asName": "",
-    "province": "",
-    "city": "",
-    "sex": "2",
-    "regionCode": "",
-    "sign": ""
+"data":
+    {
+        "username": "yqxxxx",
+        "processid": 6072,
+        "type": 71,
+        "cwxid": "wxid_yfng437lnlygXXX",
+        "wxid": "wxid_yfng437lnlygXXX",
+        "headPic": "http://wx.qlogo.cn/mmhead/ver_1/4wJLicLp7zzib6cfVlQUgYBcTQFOE/0",
+        "sheadPic": "http://wx.qlogo.cn/mmhead/ver_1/4wJLid1cHOWY0p6ctcUgYBcTQFOE/132",
+        "nick": "bigxxx",
+        "asName": "",
+        "province": "",
+        "city": "",
+        "sex": "2",
+        "regionCode": "",
+        "sign": ""
     }
 }
 ```
@@ -149,29 +152,30 @@
 <a name="friendsListDetails"></a>
 ### 好友列表详细信息 type:210
 ```json
-"data":{
-"type": 210,
-"processid": 8308,
-"cwxid": "wxid_sadaxxxxx",
-"userLists":
-    [
-        {
-        "wxid": "gh_e456599aa7XXX",
-        "asName": "(null)",
-        "headPic":  "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4nJrkU7rOWlVxMcdGIagFYT5mC6lpicvsSLj53d1Xe54w/0",
-        "sheadPic": "http://wx.qlogo.cn/mmhead/Q3auHgzwzM4nJrkU7rOWlVxMcdGIagFYT5mC6lpicvsSLj53d1Xe54w/132",
-        "nick": "微小强XXX",
-        "username": "wsdXXX",
-        "province": "上海",
-        "city": "中国",
-        "sex": 0,
-        "regionCode": "",
-        "sign": "",
-        "type": 3,
-        "groupId": "None",
-        "cwxid": "xxxxxxxx"
-        }
-    ]
+"data":
+{
+    "type": 210,
+    "processid": 8308,
+    "cwxid": "wxid_sadaxxxxx",
+    "userLists":
+        [
+            {
+                "wxid": "gh_e456599aa7XXX",
+                "asName": "(null)",
+                "headPic":  "http://wx.qlogo.cn/mmhead/Q3auHgzwC6lpicvsSLj53d1Xe54w/0",
+                "sheadPic": "http://wx.qlogo.cn/mmhead/Q3auHgz6lpicvsSLj53d1Xe54w/132",
+                "nick": "微小强XXX",
+                "username": "wsdXXX",
+                "province": "上海",
+                "city": "中国",
+                "sex": 0,
+                "regionCode": "",
+                "sign": "",
+                "type": 3,
+                "groupId": "None",
+                "cwxid": "xxxxxxxx"
+            }
+        ]
 }
 ```
 
@@ -262,13 +266,14 @@
 ### 网络获取联系人数据 type:88
 ```json
 {
-"data":{
-    "cgi":"/cgi-bin/micromsg-bin/getcontact",
-    "type":88,
-    "processid":6072,
-    "cwxid":"wxid_yfng437lnlygXXX",
-    "packLen":809,
-    "hex":"0A040800120010011A99060A015A28013202080038FFFFFFFF0",// 16进制数据,包含wxid、头像、v2等数据
+"data":
+    {
+        "cgi":"/cgi-bin/micromsg-bin/getcontact",
+        "type":88,
+        "processid":6072,
+        "cwxid":"wxid_yfng437lnlygXXX",
+        "packLen":809,
+        "hex":"0A040800120010011A99060A0B2040A0080038FFFFFFFF0",// 16进制数据,包含wxid、头像、v2等数据
     }
 }
 ```
@@ -277,11 +282,12 @@
 ### 新建群后返回群id type:69
 ```json
 {
-"data":{
-    "type":69,
-    "cwxid":"wxid_yfng437lnlygXXX",
-    "xml":"",
-    "chatroom":"218138553XXX@chatroom"
+"data":
+    {
+        "type":69,
+        "cwxid":"wxid_yfng437lnlygXXX",
+        "xml":"",
+        "chatroom":"218138553XXX@chatroom"
     }
 }
 ```
@@ -290,13 +296,14 @@
 ### 同意好友 type:96
 ```json
 {
-    "data":{
-    "cgi":"/cgi-bin/micromsg-bin/verifyuser",
-    "type":96,
-    "processid":6072,
-    "cwxid":"wxid_yfng437lnlyXXX",
-    "packLen":6,
-    "hex":"0A040800120737472616E676572", // 返回16进制数据，先将数据转换为文本，如果包含 v1，则说明发送请求成功
+    "data":
+    {
+        "cgi":"/cgi-bin/micromsg-bin/verifyuser",
+        "type":96,
+        "processid":6072,
+        "cwxid":"wxid_yfng437lnlyXXX",
+        "packLen":6,
+        "hex":"0A04080012001A6C76315F653839616E676572", // 返回16进制数据，先将数据转换为文本，如果包含 v1，则说明发送请求成功
     }
 }
 ```
@@ -305,22 +312,23 @@
 ### 获取v2 type:81
 ```json
 {
-"data":{
-    "type":81,
-    "processid":6072,
-    "cwxid":"wxid_yfng437lnlyXXX",
-    "wxid":"wxid_qg0saisth0rXXX",
-    "v2":"v2_8a0384d4c6cb06add95851691b613d873b202311f358ccfc686d802247c634f96933e891@stranger",
-    "headPic":"http://wx.qlogo.cn/mmhead/ver_1/sD1PwkscXRfbYZicqORAMFiciclycKqvicF81uTEo/0",
-    "sheadPic":"http://wx.qlogo.cn/mmhead/ver_1/sD1etbPby4kFOWoMRAFiciclycKqvicF81uTEo/132",
-    "nick":"DaQiXX
-    "username":"e1030XXX",
-    "asName":"",
-    "province":"",
-    "city":"上海",
-    "sex":"1",
-    "regionCode":"CN",
-    "sign":""
+"data":
+    {
+        "type":81,
+        "processid":6072,
+        "cwxid":"wxid_yfng437lnlyXXX",
+        "wxid":"wxid_qg0saisth0rXXX",
+        "v2":"v2_8a0384d4c6cb06add95851691b613d873b202311f358cc247c6891@stranger",
+        "headPic":"http://wx.qlogo.cn/mmhead/ver_1/sD1PwMFiciclycKqvicF81uTEo/0",
+        "sheadPic":"http://wx.qlogo.cn/mmhead/ver_1/sRAFiciclycKqvicF81uTEo/132",
+        "nick":"DaQiXXX",
+        "username":"e1030XXX",
+        "asName":"",
+        "province":"",
+        "city":"上海",
+        "sex":"1",
+        "regionCode":"CN",
+        "sign":""
     }
 }
 ```
@@ -329,19 +337,21 @@
 ### 批量获取数据库微信头像 type:95
 ```json
 {
-"data":{
-    "type":95,
-    "processid":8844,
-    "cwxid":"wxid_yfng437lnlyXXX",
-    "userLists":[
-        {
-        "wxid":"wxid_02p3fnfht9fXXX",
-        "sheadPic":"http://wx.qlogo.cn/mmhead/ver_1/rShBrnPZHnWheicjaFu5y0NJBqC5k16YicKw/132"
-        },
-        {
-        "wxid":"wxid_ywoim7u92avXXX", 
-        "sheadPic":"http://wx.qlogo.cn/mmhead/ver_1/VBibqWbX79tlxEXgWUHTdtib6icj5JhUnib0/132"
-        }
+"data":
+    {
+        "type":95,
+        "processid":8844,
+        "cwxid":"wxid_yfng437lnlyXXX",
+        "userLists":
+        [
+            {
+            "wxid":"wxid_02p3fnfht9fXXX",
+            "sheadPic":"http://wx.qlogo.cn/mmhead/ver_1/rShNJBqC5k16YicKw/132"
+            },
+            {
+            "wxid":"wxid_ywoim7u92avXXX", 
+            "sheadPic":"http://wx.qlogo.cn/mmhead/ver_1/VBibdtib6icj5JhUnib0/132"
+            }
         ]
     }
 }
